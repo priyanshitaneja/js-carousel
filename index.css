@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel__heading {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15vh 0;
+}
+
+.carousel__content {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.carousel__img {
+    width: 15vh;
+    height: 30vh;
+    object-fit: cover;
+    margin: 0 30px;
+    filter: grayscale();
+    border-radius: 20px;
+}
+
+.carousel__img.selected {
+    width: 23vh;
+    height: 40vh;
+}
+
+.carousel__coloured {
+    filter: none;
+}
+
+.carousel__button {
+    height: 50px;
+    width: 100px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.carousel__button svg {
+    height: 20px;
+}
